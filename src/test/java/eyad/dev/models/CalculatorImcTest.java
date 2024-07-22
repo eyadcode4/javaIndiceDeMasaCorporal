@@ -38,7 +38,7 @@ public class CalculatorImcTest {
     @Test
     void testCalculatorImcCategory() {
         calculator.calculate();
-        assertThat(calculator.getImcCategory(), is("Sobrepeso"));
+        assertThat(calculator.getImcCategory(), is("Overweight"));
     }
     
 }
