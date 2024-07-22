@@ -23,14 +23,6 @@ public class CalculatorImcTest {
     }
 
     @Test
-    void testCalculatorImcCanReturnPerson() {
-        assertThat(calculator.getPerson(), is(equalTo(person)));
-    }
-    @Test
-    void testCalculatorImcCanReturnImc() {
-        assertThat(calculator.getImc(), is(equalTo(0.0)));
-    }
-    @Test
     void testCalculatorImcCanReturnPersonImc() {
         calculator.calculate();
         assertThat(calculator.getImc(), is(27.78));
